@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>التوصيلات والمستلزمات - سماء العبور</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <script src="header.js"></script>
+
+    <div class="page-title">
+
+        <h1>
+            قسم التوصيلات والمستلزمات
+        </h1>
+
+        <h2>
+            منتجات التوصيلات والمستلزمات المتوفرة لدينا
+        </h2>
+
+    </div>
+
+    <div
+        class="products"
+        id="productsContainer">
+    </div>
+
+    <script src="products.js"></script>
+
+    <script>
+
+        const productsContainer =
+            document.getElementById("productsContainer");
+
+        const suppliesProducts =
+            products.filter(
+                product =>
+                    product.category === "supplies"
+            );
+
+        suppliesProducts.forEach(product => {
+
+            productsContainer.innerHTML += `
+
+                <div class="product-card">
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                    >
+
+                    <h2>
+                        ${product.name}
+                    </h2>
+
+                    <p>
+                        ${product.description}
+                    </p>
+
+                    <strong>
+                        ${product.price}
+                    </strong>
+
+                </div>
+
+            `;
+
+        });
+
+    </script>
+
+    <script src="footer.js"></script>
+
+</body>
+
+</html>

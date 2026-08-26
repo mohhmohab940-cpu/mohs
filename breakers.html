@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>القواطع واللوحات - سماء العبور</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- الهيدر -->
+
+    <script src="header.js"></script>
+
+
+    <!-- عنوان الصفحة -->
+
+    <div class="page-title">
+
+        <h1>
+            قسم القواطع واللوحات
+        </h1>
+
+        <h2>
+            منتجات القواطع واللوحات المتوفرة لدينا
+        </h2>
+
+    </div>
+
+
+    <!-- المنتجات -->
+
+    <div
+        class="products"
+        id="productsContainer">
+    </div>
+
+
+    <!-- ملف المنتجات -->
+
+    <script src="products.js"></script>
+
+
+    <!-- عرض منتجات القواطع واللوحات -->
+
+    <script>
+
+        const productsContainer =
+            document.getElementById("productsContainer");
+
+
+        const breakersProducts =
+            products.filter(
+                product =>
+                    product.category === "breakers"
+            );
+
+
+        breakersProducts.forEach(product => {
+
+            productsContainer.innerHTML += `
+
+                <div class="product-card">
+
+                    <img
+                        src="${product.image}"
+                        alt="${product.name}"
+                    >
+
+                    <h2>
+                        ${product.name}
+                    </h2>
+
+                    <p>
+                        ${product.description}
+                    </p>
+
+                    <strong>
+                        ${product.price}
+                    </strong>
+
+                </div>
+
+            `;
+
+        });
+
+    </script>
+
+
+    <!-- الفوتر -->
+
+    <script src="footer.js"></script>
+
+</body>
+
+</html>

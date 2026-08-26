@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>سماء العبور للأدوات الكهربائية</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #111;
+        }
+
+
+        /* =====================================
+           الهيدر
+        ===================================== */
+
+        .site-header {
+            width: 100%;
+            background-color: white;
+        }
+
+
+        /* الشريط العلوي */
+
+        .top-bar {
+            width: 100%;
+            min-height: 40px;
+
+            background-color: #0B1F5E;
+            color: #FFD700;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 35px;
+
+            padding: 10px 15px;
+
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+
+        .top-bar span {
+            white-space: nowrap;
+        }
+
+
+        /* الجزء الرئيسي للهيدر */
+
+        .header-main {
+            width: 95%;
+            max-width: 1400px;
+
+            min-height: 130px;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+
+        /* اللوجو */
+
+        .logo {
+            display: block;
+            text-decoration: none;
+        }
+
+
+        .logo img {
+            width: 105px;
+            height: 105px;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* مربع البحث */
+
+        .search-box {
+            flex: 1;
+
+            width: 100%;
+            max-width: 700px;
+
+            height: 50px;
+
+            display: flex;
+
+            border: 1px solid #d8dce5;
+
+            background-color: white;
+        }
+
+
+        .search-box input {
+            flex: 1;
+
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            padding: 0 18px;
+
+            font-size: 16px;
+
+            text-align: right;
+        }
+
+
+        .search-box button {
+            width: 60px;
+
+            border: none;
+
+            background-color: #0B1F5E;
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+
+        .search-box button:hover {
+            background-color: #123B8F;
+        }
+
+
+        /* أيقونات */
+
+        .header-icons {
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            font-size: 30px;
+        }
+
+
+        /* القائمة الرئيسية */
+
+        .main-nav {
+            width: 100%;
+
+            min-height: 55px;
+
+            background-color: #0B1F5E;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 55px;
+
+            padding: 8px 15px;
+        }
+
+
+        .main-nav a {
+            color: #FFD700;
+
+            text-decoration: none;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            padding: 10px 5px;
+
+            transition: 0.2s;
+        }
+
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================
+           الـ HERO
+        ===================================== */
+
+        .hero {
+            position: relative;
+
+            width: 70%;
+
+            height: 600px;
+
+            margin: 0 auto;
+
+            overflow: hidden;
+
+            background-color: #ddd;
+        }
+
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .hero-content {
+            position: absolute;
+
+            top: 50%;
+            right: 50%;
+
+            transform: translate(50%, -50%);
+
+            width: min(80%, 650px);
+
+            background-color: rgba(11, 31, 94, 0.85);
+
+            padding: 35px 60px;
+
+            text-align: center;
+
+            border-radius: 15px;
+
+            color: white;
+        }
+
+
+        .hero-content h2 {
+            font-size: 40px;
+
+            margin: 0 0 15px;
+        }
+
+
+        .hero-content p {
+            color: #FFD700;
+
+            font-size: 24px;
+
+            font-weight: bold;
+
+            margin: 0 0 20px;
+        }
+
+
+        .hero-content button {
+            background-color: #FFD700;
+
+            color: #0B1F5E;
+
+            border: none;
+
+            padding: 15px 35px;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            transition: 0.25s;
+        }
+
+
+        .hero-content button:hover {
+            background-color: #0B1F5E;
+
+            color: #FFD700;
+        }
+
+
+        /* =====================================
+           الأقسام
+        ===================================== */
+
+        .categories {
+            width: 90%;
+
+            max-width: 1400px;
+
+            margin: 50px auto;
+
+            text-align: center;
+        }
+
+
+        .categories > h2 {
+            color: #0B1F5E;
+
+            font-size: 35px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .category-container {
+            display: grid;
+
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .category-card {
+            display: block;
+
+            background-color: white;
+
+            border: 2px solid #eee;
+
+            border-radius: 15px;
+
+            padding: 20px;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+
+            cursor: pointer;
+        }
+
+
+        .category-card img {
+            width: 100%;
+
+            height: 180px;
+
+            object-fit: contain;
+
+            border-radius: 10px;
+
+            display: block;
+        }
+
+
+        .category-card h3 {
+            color: #0B1F5E;
+
+            font-size: 22px;
+
+            margin: 18px 0 5px;
+        }
+
+
+        .category-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #FFD700;
+
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* =====================================
+           الموبايل
+        ===================================== */
+
+        @media (max-width: 1000px) {
+
+            .hero {
+                width: 85%;
+            }
+
+
+            .category-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+
+            .main-nav {
+                gap: 25px;
+            }
+
+        }
+
+
+        @media (max-width: 800px) {
+
+            .top-bar {
+                gap: 12px;
+
+                font-size: 11px;
+
+                flex-wrap: wrap;
+            }
+
+
+            .header-main {
+                flex-direction: column;
+
+                padding: 15px 0;
+
+                gap: 15px;
+            }
+
+
+            .logo img {
+                width: 80px;
+                height: 80px;
+            }
+
+
+            .search-box {
+                width: 95%;
+
+                max-width: none;
+            }
+
+
+            .main-nav {
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                padding: 10px;
+            }
+
+
+            .main-nav a {
+                font-size: 14px;
+            }
+
+
+            .hero {
+                width: 100%;
+
+                height: 450px;
+            }
+
+
+            .hero-content {
+                width: 90%;
+
+                padding: 25px 20px;
+            }
+
+
+            .hero-content h2 {
+                font-size: 28px;
+            }
+
+
+            .hero-content p {
+                font-size: 18px;
+            }
+
+
+            .hero-content button {
+                font-size: 17px;
+
+                padding: 12px 25px;
+            }
+
+
+            .categories {
+                width: 94%;
+            }
+
+
+            .category-container {
+                grid-template-columns: repeat(2, 1fr);
+
+                gap: 15px;
+            }
+
+
+            .category-card img {
+                height: 150px;
+            }
+
+
+            .category-card h3 {
+                font-size: 18px;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .category-container {
+                grid-template-columns: 1fr;
+            }
+
+
+            .category-card img {
+                height: 180px;
+            }
+
+        }
+        /* =========================
+   Footer
+========================= */
+
+.site-footer {
+    margin-top: 80px;
+    background-color: #0B1F5E;
+    color: white;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 50px;
+
+    text-align: right;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-box h3 {
+    color: #FFD700;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.footer-box p {
+    color: #f2f2f2;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.footer-box a:hover {
+    color: #FFD700;
+}
+
+.footer-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    padding: 18px;
+
+    color: #FFD700;
+
+    font-size: 14px;
+}
+
+
+/* الموبايل */
+
+@media (max-width: 700px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .footer-box {
+        align-items: center;
+    }
+
+}
+.top-bar a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-bar a:hover {
+    color: white;
+}
+.hero-button {
+    display: inline-block;
+
+    background-color: #FFD700;
+    color: #0B1F5E;
+
+    padding: 15px 35px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+.hero-button:hover {
+    background-color: #0B1F5E;
+    color: #FFD700;
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         الهيدر
+    ===================================== -->
+
+    <header class="site-header">
+
+
+        <!-- الشريط العلوي -->
+
+        <div class="top-bar">
+
+    <span>📞 01097793747</span>
+
+    <a href="https://wa.me/201097793747" target="_blank">
+        WhatsApp
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100083615672026" target="_blank">
+        Facebook
+    </a>
+
+    <span>✉ managerc8@gmail.com</span>
+
+</div>
+
+        <!-- الجزء الرئيسي -->
+
+        <div class="header-main">
+
+
+            <!-- اللوجو -->
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="سماء العبور للأدوات الكهربائية"
+                >
+
+            </a>
+
+
+            <!-- البحث -->
+
+           <form class="search-box" action="search.html" method="GET">
+
+    <input
+        type="text"
+        name="q"
+        placeholder="ابحث عن المنتجات"
+    >
+
+    <button type="submit">🔍</button>
+
+</form>
+
+
+            <!-- الأيقونات -->
+
+            <div class="header-icons">
+
+                <span>🛒</span>
+
+                <span>👤</span>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- القائمة -->
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                الرئيسية
+            </a>
+            <a href="products.html">
+    المنتجات
+</a>
+
+            <a href="lighting.html">
+                الإضاءة
+            </a>
+
+            <a href="switches.html">
+                المفاتيح والبرايز
+            </a>
+
+            <a href="cables.html">
+                الكابلات والأسلاك
+            </a>
+
+            <a href="breakers.html">
+                القواطع واللوحات
+            </a>
+
+            <a href="supplies.html">
+                التوصيلات والمستلزمات
+            </a>
+
+            <a href="#contact">
+                تواصل معنا
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         صورة المحل الرئيسية
+    ===================================== -->
+
+    <section class="hero">
+
+
+        <img
+            src="images/shop-banner.png"
+            alt="محل سماء العبور للأدوات الكهربائية"
+        >
+
+
+        <div class="hero-content">
+
+            <h2>
+                كل ما تحتاجه من أدوات كهربائية
+            </h2>
+
+
+            <p>
+                جودة عالية • أسعار تنافسية • ثقة عملائنا
+            </p>
+
+
+            <a href="products.html" class="hero-button">
+    تصفح المنتجات
+</a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         الأقسام
+    ===================================== -->
+
+    <section class="categories">
+
+
+        <h2>
+            تصفح الأقسام
+        </h2>
+
+
+        <div class="category-container">
+
+
+            <!-- الإضاءة -->
+
+            <a
+                href="lighting.html"
+                class="category-card"
+            >
+
+                <img
+                    src="images/lighting.jpg.png"
+                    alt="الإضاءة"
+                >
+
+                <h3>
+                    الإضاءة
+                </h3>
+
+            </a>
+
+
+            <!-- المفاتيح والبرايز -->
+
+            <a
+                href="switches.html"
+                class="category-card"
+            >
+
+                <img
+                    src="images/switches.jpg.png"
+                    alt="المفاتيح والبرايز"
+                >
+
+                <h3>
+                    المفاتيح والبرايز
+                </h3>
+
+            </a>
+
+
+            <!-- الكابلات والأسلاك -->
+
+            <a
+                href="cables.html"
+                class="category-card"
+            >
+
+                <img
+                    src="images/cables.jpg.jpg"
+                    alt="الكابلات والأسلاك"
+                >
+
+                <h3>
+                    الكابلات والأسلاك
+                </h3>
+
+            </a>
+
+
+            <!-- القواطع واللوحات -->
+
+            <a
+                href="breakers.html"
+                class="category-card"
+            >
+
+                <img
+                    src="images/breakers.jpg.jpg"
+                    alt="القواطع واللوحات"
+                >
+
+                <h3>
+                    القواطع واللوحات
+                </h3>
+
+            </a>
+
+
+            <!-- التوصيلات والمستلزمات -->
+
+            <a
+                href="supplies.html"
+                class="category-card"
+            >
+
+                <img
+                    src="images/supplies.jpg.jpg"
+                    alt="التوصيلات والمستلزمات"
+                >
+
+                <h3>
+                    التوصيلات والمستلزمات
+                </h3>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================
+         التواصل - سنكمله بعدين
+    ===================================== -->
+
+    <section id="contact">
+
+    </section>
+<footer class="site-footer" id="contact">
+
+    <div class="footer-container">
+
+        <!-- معلومات المحل -->
+        <div class="footer-box">
+
+            <img
+                src="images/logo.png"
+                alt="سماء العبور"
+                class="footer-logo"
+            >
+
+            <h3>سماء العبور للأدوات الكهربائية</h3>
+
+            <p>
+                كل ما تحتاجه من الأدوات والمستلزمات الكهربائية
+                بجودة عالية وأسعار مناسبة.
+            </p>
+
+        </div>
+
+
+        <!-- الأقسام -->
+        <div class="footer-box">
+
+            <h3>الأقسام</h3>
+
+            <a href="lighting.html">الإضاءة</a>
+
+            <a href="switches.html">المفاتيح والبرايز</a>
+
+            <a href="cables.html">الكابلات والأسلاك</a>
+
+            <a href="breakers.html">القواطع واللوحات</a>
+
+            <a href="supplies.html">التوصيلات والمستلزمات</a>
+
+        </div>
+
+
+        <!-- تواصل معنا -->
+        <div class="footer-box">
+
+            <h3>تواصل معنا</h3>
+
+            <p>📞 01097793747</p>
+
+            <p>📧 managerc8@gmail.com</p>
+
+            <a href="https://www.facebook.com/profile.php?id=100083615672026"
+   target="_blank">
+    Facebook
+</a>
+  <a href="https://wa.me/201097793747"
+       target="_blank">
+        WhatsApp
+    </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 سماء العبور للأدوات الكهربائية - جميع الحقوق محفوظة
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>

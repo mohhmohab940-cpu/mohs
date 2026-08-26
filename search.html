@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>نتائج البحث - سماء العبور</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* =====================================
+           الصفحة
+        ===================================== */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #111;
+        }
+
+
+        /* =====================================
+           الهيدر
+        ===================================== */
+
+        .site-header {
+            width: 100%;
+            background-color: white;
+        }
+
+
+        /* الشريط العلوي */
+
+        .top-bar {
+            width: 100%;
+            min-height: 40px;
+
+            background-color: #0B1F5E;
+            color: #FFD700;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 35px;
+
+            padding: 10px 15px;
+
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+
+        .top-bar span {
+            white-space: nowrap;
+        }
+
+
+        .top-bar a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .top-bar a:hover {
+            color: white;
+        }
+
+
+        /* الجزء الرئيسي */
+
+        .header-main {
+            width: 95%;
+            max-width: 1400px;
+
+            min-height: 130px;
+
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 30px;
+        }
+
+
+        /* اللوجو */
+
+        .logo {
+            display: block;
+            text-decoration: none;
+        }
+
+
+        .logo img {
+            width: 105px;
+            height: 105px;
+
+            object-fit: contain;
+
+            display: block;
+        }
+
+
+        /* البحث */
+
+        .search-box {
+            flex: 1;
+
+            width: 100%;
+            max-width: 700px;
+
+            height: 50px;
+
+            display: flex;
+
+            border: 1px solid #d8dce5;
+
+            background-color: white;
+        }
+
+
+        .search-box input {
+            flex: 1;
+
+            width: 100%;
+
+            border: none;
+            outline: none;
+
+            padding: 0 18px;
+
+            font-size: 16px;
+
+            text-align: right;
+        }
+
+
+        .search-box button {
+            width: 60px;
+
+            border: none;
+
+            background-color: #0B1F5E;
+            color: white;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+
+        .search-box button:hover {
+            background-color: #123B8F;
+        }
+
+
+        /* الأيقونات */
+
+        .header-icons {
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            font-size: 30px;
+        }
+
+
+        /* القائمة */
+
+        .main-nav {
+            width: 100%;
+
+            min-height: 55px;
+
+            background-color: #0B1F5E;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 55px;
+
+            padding: 8px 15px;
+        }
+
+
+        .main-nav a {
+            color: #FFD700;
+
+            text-decoration: none;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            padding: 10px 5px;
+
+            transition: 0.2s;
+        }
+
+
+        .main-nav a:hover {
+            color: white;
+        }
+
+
+        /* =====================================
+           عنوان البحث
+        ===================================== */
+
+        .search-title {
+            text-align: center;
+
+            margin: 30px 0 35px;
+        }
+
+
+        .search-title h1 {
+            color: #0B1F5E;
+
+            font-size: 38px;
+
+            margin: 0 0 10px;
+        }
+
+
+        .search-title p {
+            color: #555;
+
+            font-size: 20px;
+
+            margin: 0;
+        }
+
+
+        /* =====================================
+           المنتجات
+        ===================================== */
+
+        .products {
+            width: 94%;
+
+            max-width: 1400px;
+
+            margin: 0 auto 60px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, minmax(0, 1fr));
+
+            gap: 20px;
+        }
+
+
+        /* كارت */
+
+        .product-card {
+            background-color: #ffffff;
+
+            padding: 14px;
+
+            border-radius: 15px;
+
+            border: 1px solid #e1e5ec;
+
+            box-shadow:
+                0 4px 12px rgba(11, 31, 94, 0.08);
+
+            transition: 0.25s;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            min-width: 0;
+        }
+
+
+        .product-card:hover {
+            transform: translateY(-6px);
+
+            border-color: #FFD700;
+
+            box-shadow:
+                0 10px 25px rgba(11, 31, 94, 0.16);
+        }
+
+
+        .product-card img {
+            width: 100%;
+
+            height: 190px;
+
+            object-fit: contain;
+
+            margin-bottom: 8px;
+        }
+
+
+        .product-card h2 {
+            color: #0B1F5E;
+
+            font-size: 19px;
+
+            line-height: 1.4;
+
+            margin: 8px 0;
+        }
+
+
+        .product-card p {
+            color: #555;
+
+            font-size: 15px;
+
+            margin: 5px 0 10px;
+        }
+
+
+        .product-card strong {
+            display: block;
+
+            color: #0B1F5E;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            margin: 8px 0 5px;
+        }
+
+
+        .product-card::after {
+            content: "";
+
+            width: 45px;
+
+            height: 3px;
+
+            background-color: #FFD700;
+
+            border-radius: 10px;
+
+            margin-top: 8px;
+        }
+
+
+        /* لا توجد نتائج */
+
+        .no-results {
+            grid-column: 1 / -1;
+
+            background-color: white;
+
+            padding: 50px;
+
+            border-radius: 15px;
+
+            color: #555;
+
+            font-size: 22px;
+
+            box-shadow:
+                0 4px 12px rgba(11, 31, 94, 0.08);
+        }
+
+
+        /* =====================================
+           Footer
+        ===================================== */
+
+        .site-footer {
+            margin-top: 80px;
+
+            background-color: #0B1F5E;
+
+            color: white;
+        }
+
+
+        .footer-container {
+            width: 90%;
+
+            max-width: 1400px;
+
+            margin: auto;
+
+            padding: 50px 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 50px;
+
+            text-align: right;
+        }
+
+
+        .footer-box {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 10px;
+        }
+
+
+        .footer-box h3 {
+            color: #FFD700;
+
+            font-size: 22px;
+
+            margin: 0 0 10px;
+        }
+
+
+        .footer-box p {
+            color: #f2f2f2;
+
+            line-height: 1.8;
+
+            margin: 0;
+        }
+
+
+        .footer-box a {
+            color: #FFD700;
+
+            text-decoration: none;
+
+            transition: 0.2s;
+        }
+
+
+        .footer-box a:hover {
+            color: white;
+        }
+
+
+        .footer-logo {
+            width: 90px;
+
+            height: 90px;
+
+            object-fit: contain;
+        }
+
+
+        .footer-bottom {
+            border-top:
+                1px solid rgba(255,255,255,0.15);
+
+            text-align: center;
+
+            padding: 18px;
+
+            color: #FFD700;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================
+           الشاشات المتوسطة
+        ===================================== */
+
+        @media (max-width: 1100px) {
+
+            .products {
+                grid-template-columns:
+                    repeat(4, 1fr);
+            }
+
+        }
+
+
+        /* =====================================
+           التابلت
+        ===================================== */
+
+        @media (max-width: 850px) {
+
+            .products {
+                grid-template-columns:
+                    repeat(3, 1fr);
+            }
+
+        }
+
+
+        /* =====================================
+           الموبايل
+        ===================================== */
+
+        @media (max-width: 800px) {
+
+            .top-bar {
+                gap: 12px;
+
+                font-size: 11px;
+
+                flex-wrap: wrap;
+            }
+
+
+            .header-main {
+                flex-direction: column;
+
+                padding: 15px 0;
+
+                gap: 15px;
+            }
+
+
+            .logo img {
+                width: 80px;
+
+                height: 80px;
+            }
+
+
+            .search-box {
+                width: 95%;
+
+                max-width: none;
+            }
+
+
+            .main-nav {
+                gap: 12px;
+
+                flex-wrap: wrap;
+
+                padding: 10px;
+            }
+
+
+            .main-nav a {
+                font-size: 14px;
+            }
+
+
+            .footer-container {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+
+                gap: 30px;
+            }
+
+
+            .footer-box {
+                align-items: center;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .products {
+                width: 94%;
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+                gap: 12px;
+            }
+
+
+            .product-card {
+                padding: 10px;
+
+                border-radius: 12px;
+            }
+
+
+            .product-card img {
+                height: 150px;
+            }
+
+
+            .product-card h2 {
+                font-size: 17px;
+            }
+
+
+            .product-card strong {
+                font-size: 19px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         الهيدر
+    ===================================== -->
+
+    <header class="site-header">
+
+
+        <div class="top-bar">
+ <span>
+                📞 01097793747
+            </span>
+             <a
+                href="https://wa.me/201097793747"
+                target="_blank">
+                WhatsApp
+            </a>
+
+            <a
+                href="https://www.facebook.com/profile.php?id=100083615672026"
+                target="_blank">
+                Facebook
+            </a>
+
+           
+           <span>
+               ✉ managerc8@gmail.com 
+            </span>
+
+
+        </div>
+
+
+        <div class="header-main">
+
+
+            <a
+                href="index.html"
+                class="logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="سماء العبور"
+                >
+
+            </a>
+
+
+            <form
+                class="search-box"
+                action="search.html"
+                method="GET">
+
+                <input
+                    type="text"
+                    name="q"
+                    placeholder="ابحث عن المنتجات"
+                >
+
+                <button type="submit">
+                    🔍
+                </button>
+
+            </form>
+
+
+            <div class="header-icons">
+
+                <span>🛒</span>
+
+                <span>👤</span>
+
+            </div>
+
+
+        </div>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">
+                الرئيسية
+            </a>
+
+            <a href="lighting.html">
+                الإضاءة
+            </a>
+
+            <a href="switches.html">
+                المفاتيح والبرايز
+            </a>
+
+            <a href="cables.html">
+                الكابلات والأسلاك
+            </a>
+
+            <a href="breakers.html">
+                القواطع واللوحات
+            </a>
+
+            <a href="supplies.html">
+                التوصيلات والمستلزمات
+            </a>
+
+            <a href="#contact">
+                تواصل معنا
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         نتائج البحث
+    ===================================== -->
+
+    <section class="search-title">
+
+        <h1>
+            نتائج البحث
+        </h1>
+
+        <p id="searchText">
+            جاري البحث...
+        </p>
+
+    </section>
+
+
+
+    <!-- المنتجات -->
+
+    <div
+        class="products"
+        id="results">
+    </div>
+
+
+
+    <!-- =====================================
+         Footer
+    ===================================== -->
+
+    <footer
+        class="site-footer"
+        id="contact">
+
+
+        <div class="footer-container">
+
+
+            <div class="footer-box">
+
+                <img
+                    src="images/logo.png"
+                    alt="سماء العبور"
+                    class="footer-logo"
+                >
+
+                <h3>
+                    سماء العبور للأدوات الكهربائية
+                </h3>
+
+                <p>
+                    كل ما تحتاجه من الأدوات والمستلزمات
+                    الكهربائية بجودة عالية وأسعار مناسبة.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    الأقسام
+                </h3>
+
+                <a href="lighting.html">
+                    الإضاءة
+                </a>
+
+                <a href="switches.html">
+                    المفاتيح والبرايز
+                </a>
+
+                <a href="cables.html">
+                    الكابلات والأسلاك
+                </a>
+
+                <a href="breakers.html">
+                    القواطع واللوحات
+                </a>
+
+                <a href="supplies.html">
+                    التوصيلات والمستلزمات
+                </a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>
+                    تواصل معنا
+                </h3>
+
+                <p>
+                    📞 01097793747
+                </p>
+
+                <p>
+                    📧 managerc8@gmail.com
+                </p>
+
+                <a
+                    href="https://www.facebook.com/profile.php?id=100083615672026"
+                    target="_blank">
+                    Facebook
+                </a>
+
+                <a
+                    href="https://wa.me/201097793747"
+                    target="_blank">
+                    WhatsApp
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 سماء العبور للأدوات الكهربائية
+            - جميع الحقوق محفوظة
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =====================================
+         المنتجات
+    ===================================== -->
+
+    <script src="products.js"></script>
+
+
+    <script>
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+
+        const query =
+            (params.get("q") || "")
+                .trim()
+                .toLowerCase();
+
+
+        const searchText =
+            document.getElementById(
+                "searchText"
+            );
+
+
+        const results =
+            document.getElementById(
+                "results"
+            );
+
+
+        searchText.textContent =
+            query
+                ? `نتائج البحث عن: ${query}`
+                : "اكتب اسم المنتج للبحث";
+
+
+        if (!query) {
+
+            results.innerHTML = `
+                <div class="no-results">
+                    اكتب اسم المنتج في مربع البحث
+                </div>
+            `;
+
+        } else {
+
+
+            const filteredProducts =
+                products.filter(product => {
+
+                    const productText = (
+
+                        product.name +
+                        " " +
+                        product.description +
+                        " " +
+                        product.category
+
+                    ).toLowerCase();
+
+
+                    return productText.includes(query);
+
+                });
+
+
+            if (
+                filteredProducts.length === 0
+            ) {
+
+                results.innerHTML = `
+                    <div class="no-results">
+                        للأسف مفيش منتج مطابق لبحثك
+                    </div>
+                `;
+
+            } else {
+
+
+                filteredProducts.forEach(
+                    product => {
+
+                        results.innerHTML += `
+
+                            <div class="product-card">
+
+                                <img
+                                    src="${product.image}"
+                                    alt="${product.name}"
+                                >
+
+                                <h2>
+                                    ${product.name}
+                                </h2>
+
+                                <p>
+                                    ${product.description}
+                                </p>
+
+                                <strong>
+                                    ${product.price}
+                                </strong>
+
+                            </div>
+
+                        `;
+
+                    }
+                );
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
