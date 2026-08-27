@@ -883,6 +883,13 @@ const products = [
         image: "images/مفتاح احمر بلمبه.jpg",
         category: "supplies"
     },
+     {
+        name: "ريموت تايمر",
+        description: " ريموتات",
+        price: "30 جنيه",
+        image: "images/ريموت تايمر.jpg",
+        category: "supplies"
+    },
 
     {
         name: "مفتاح 6 A بلمبه",
