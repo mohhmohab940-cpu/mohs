@@ -890,6 +890,20 @@ const products = [
         image: "images/ريموت تايمر.jpg",
         category: "supplies"
     },
+     {
+        name: "ريموت lm",
+        description: " ريموتات",
+        price: "30 جنيه",
+        image: "images/ريموت lm.jpg",
+        category: "supplies"
+    },
+      {
+        name: "ريموت سات",
+        description: " ريموتات",
+        price: "30 جنيه",
+        image: "images/ريموت سات.jpg",
+        category: "supplies"
+    },
 
     {
         name: "مفتاح 6 A بلمبه",
