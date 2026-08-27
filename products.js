@@ -894,7 +894,7 @@ const products = [
         name: "ريموت lm",
         description: " ريموتات",
         price: "30 جنيه",
-        image: "images/ريموت تايمر.jpg",
+        image: "images/remote-lm.WEBP",
         category: "supplies"
     },
       {
