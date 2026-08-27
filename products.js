@@ -901,7 +901,7 @@ const products = [
         name: "ريموت سات",
         description: " ريموتات",
         price: "30 جنيه",
-        image: "images/remote-sat",
+        image: "images/remote-sat.JPEG",
         category: "supplies"
     },
 
