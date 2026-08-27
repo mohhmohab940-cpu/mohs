@@ -929,35 +929,35 @@ const products = [
         name: "حجر 2032 ",
         description: " بطاريات",
         price: "40 جنيه",
-        image: "images/3v-2032-N",
+        image: "images/3v-2032-N.jpg",
         category: "supplies"
     },
    {
         name: "حجر 2016 Panasonic",
         description: " بطاريات",
         price: "40 جنيه",
-        image: "images/3v-2016-panasonic",
+        image: "images/3v-2016-panasonic.jpg",
         category: "supplies"
     },
     {
         name: "حجر 2016 ",
         description: " بطاريات",
         price: "20 جنيه",
-        image: "images/3v-2032-N",
+        image: "images/3v-2032-N.jpg",
         category: "supplies"
     },
     {
         name: "حجر 2025 ",
         description: " بطاريات",
         price: "20 جنيه",
-        image: "images/3v-2025-N",
+        image: "images/3v-2025-N.jpg",
         category: "supplies"
     },
     {
         name: "حجر 1220 ",
         description: " بطاريات",
         price: "20 جنيه",
-        image: "images/3v-1220-N",
+        image: "images/3v-1220-N.jpg",
         category: "supplies"
     },
     {
