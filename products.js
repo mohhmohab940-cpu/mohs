@@ -904,7 +904,62 @@ const products = [
         image: "images/ريموت تايمر.jpg",
         category: "supplies"
     },
-
+      {
+        name: "حجر ريموت",
+        description: " بطاريات",
+        price: "10 جنيه",
+        image: "images/remote-b",
+        category: "supplies"
+    },
+         {
+        name: "حجر قلم",
+        description: " بطاريات",
+        price: "10 جنيه",
+        image: "images/pen-B",
+        category: "supplies"
+    },
+    {
+        name: "حجر 2032 Panasonic",
+        description: " بطاريات",
+        price: "40 جنيه",
+        image: "images/3v-2032-panasonic",
+        category: "supplies"
+    },
+    {
+        name: "حجر 2032 ",
+        description: " بطاريات",
+        price: "40 جنيه",
+        image: "images/3v-2032-N",
+        category: "supplies"
+    },
+   {
+        name: "حجر 2016 Panasonic",
+        description: " بطاريات",
+        price: "40 جنيه",
+        image: "images/3v-2016-panasonic",
+        category: "supplies"
+    },
+    {
+        name: "حجر 2016 ",
+        description: " بطاريات",
+        price: "20 جنيه",
+        image: "images/3v-2032-N",
+        category: "supplies"
+    },
+    {
+        name: "حجر 2025 ",
+        description: " بطاريات",
+        price: "20 جنيه",
+        image: "images/3v-2025-N",
+        category: "supplies"
+    },
+    {
+        name: "حجر 1220 ",
+        description: " بطاريات",
+        price: "20 جنيه",
+        image: "images/3v-1220-N",
+        category: "supplies"
+    },
     {
         name: "مفتاح 6 A بلمبه",
         description: "مفتاح بإضاءة",
