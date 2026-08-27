@@ -894,14 +894,14 @@ const products = [
         name: "ريموت lm",
         description: " ريموتات",
         price: "30 جنيه",
-        image: "images/ريموت lm.jpg",
+        image: "images/ريموت lm.jpeg",
         category: "supplies"
     },
       {
         name: "ريموت سات",
         description: " ريموتات",
         price: "30 جنيه",
-        image: "images/ريموت سات.jpg",
+        image: "images/ريموت سات.jpeg",
         category: "supplies"
     },
 
