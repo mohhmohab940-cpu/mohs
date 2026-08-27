@@ -915,7 +915,7 @@ const products = [
         name: "حجر قلم",
         description: " بطاريات",
         price: "10 جنيه",
-        image: "images/pen-B",
+        image: "images/pen-B.png",
         category: "supplies"
     },
     {
