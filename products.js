@@ -908,7 +908,7 @@ const products = [
         name: "حجر ريموت",
         description: " بطاريات",
         price: "10 جنيه",
-        image: "images/remote-b",
+        image: "images/remote-B.png",
         category: "supplies"
     },
          {
@@ -922,7 +922,7 @@ const products = [
         name: "حجر 2032 Panasonic",
         description: " بطاريات",
         price: "40 جنيه",
-        image: "images/3v-2032-panasonic.jpg",
+        image: "images/3v-2032-panasonic",
         category: "supplies"
     },
     {
