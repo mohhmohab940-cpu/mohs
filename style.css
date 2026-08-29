@@ -796,11 +796,5 @@ body {
 
         font-size: 18px;
     }
-.footer-box footer-key-service{
-    width: 100px !important;
-    height: 56px !important;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 8px;
-}
+
 }
