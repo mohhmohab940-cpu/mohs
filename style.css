@@ -2183,5 +2183,13 @@ body {
     object-fit: contain;
     border-radius: 8px;
 }
-
+.footer-service-image,
+.footer-key-image {
+    width: 150px !important;
+    height: 85px !important;
+    max-width: 150px !important;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
 }
