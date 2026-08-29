@@ -688,3 +688,507 @@ body {
     }
 
 }
+/* =========================================
+   خدمة نسخ المفاتيح
+========================================= */
+
+.key-copy-section {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B1F5E,
+            #123B8F
+        );
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(11, 31, 94, 0.18);
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.key-copy-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    background:
+        rgba(255, 215, 0, 0.10);
+
+    border-radius: 50%;
+
+    top: -100px;
+
+    right: -70px;
+}
+
+
+.key-copy-content {
+
+    min-height: 260px;
+
+    padding: 40px 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.key-copy-text {
+
+    flex: 1;
+
+    text-align: right;
+}
+
+
+.key-copy-text h2 {
+
+    color: #FFD700;
+
+    font-size: 34px;
+
+    margin: 0 0 15px;
+}
+
+
+.key-copy-text h3 {
+
+    color: white;
+
+    font-size: 24px;
+
+    margin: 0 0 15px;
+}
+
+
+.key-copy-text p {
+
+    color: #f2f2f2;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin: 0 0 25px;
+
+    max-width: 700px;
+}
+
+
+.key-copy-button {
+
+    display: inline-block;
+
+    background-color: #FFD700;
+
+    color: #0B1F5E;
+
+    padding: 13px 30px;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+}
+
+
+.key-copy-button:hover {
+
+    background-color: white;
+
+    color: #0B1F5E;
+
+    transform: translateY(-2px);
+}
+
+
+.key-copy-icon {
+
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    background-color: #FFD700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 75px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================
+   صفحة نسخ المفاتيح
+========================================= */
+
+.keys-page {
+
+    width: 94%;
+
+    max-width: 1200px;
+
+    margin: 40px auto 80px;
+}
+
+
+.keys-hero {
+
+    background:
+        linear-gradient(
+            135deg,
+            #0B1F5E,
+            #123B8F
+        );
+
+    border-radius: 20px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px rgba(11, 31, 94, 0.18);
+}
+
+
+.keys-icon {
+
+    width: 120px;
+
+    height: 120px;
+
+    margin: 0 auto 20px;
+
+    background-color: #FFD700;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 60px;
+}
+
+
+.keys-hero h1 {
+
+    margin: 0 0 12px;
+
+    color: white;
+
+    font-size: 42px;
+}
+
+
+.keys-hero h2 {
+
+    margin: 0 0 15px;
+
+    color: #FFD700;
+
+    font-size: 24px;
+}
+
+
+.keys-hero p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #f2f2f2;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+.keys-info {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.keys-card {
+
+    background-color: white;
+
+    border: 1px solid #e1e5ec;
+
+    border-radius: 18px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 12px rgba(11, 31, 94, 0.08);
+
+    transition: 0.25s;
+}
+
+
+.keys-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #FFD700;
+
+    box-shadow:
+        0 10px 25px rgba(11, 31, 94, 0.15);
+}
+
+
+.keys-card-icon {
+
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+
+.keys-card h3 {
+
+    color: #0B1F5E;
+
+    font-size: 22px;
+
+    margin: 10px 0;
+}
+
+
+.keys-card p {
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+.keys-contact {
+
+    margin-top: 30px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    border: 1px solid #e1e5ec;
+
+    box-shadow:
+        0 4px 12px rgba(11, 31, 94, 0.08);
+}
+
+
+.keys-contact h2 {
+
+    color: #0B1F5E;
+
+    font-size: 30px;
+
+    margin: 0 0 10px;
+}
+
+
+.keys-contact p {
+
+    color: #555;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+.keys-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.key-whatsapp,
+.key-call {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 17px;
+
+    transition: 0.25s;
+}
+
+
+.key-whatsapp {
+
+    background-color: #FFD700;
+
+    color: #0B1F5E;
+}
+
+
+.key-call {
+
+    background-color: #0B1F5E;
+
+    color: white;
+}
+
+
+.key-whatsapp:hover,
+.key-call:hover {
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   موبايل خدمة نسخ المفاتيح
+========================================= */
+
+@media (max-width: 800px) {
+
+    .key-copy-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 35px 20px;
+    }
+
+
+    .key-copy-text {
+
+        text-align: center;
+    }
+
+
+    .key-copy-text h2 {
+
+        font-size: 28px;
+    }
+
+
+    .key-copy-text h3 {
+
+        font-size: 20px;
+    }
+
+
+    .key-copy-text p {
+
+        font-size: 15px;
+    }
+
+
+    .key-copy-icon {
+
+        width: 110px;
+
+        height: 110px;
+
+        font-size: 55px;
+    }
+
+
+    .keys-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .keys-hero {
+
+        padding: 45px 20px;
+    }
+
+
+    .keys-hero h1 {
+
+        font-size: 32px;
+    }
+
+
+    .keys-hero h2 {
+
+        font-size: 21px;
+    }
+
+
+    .keys-hero p {
+
+        font-size: 16px;
+    }
+
+}
