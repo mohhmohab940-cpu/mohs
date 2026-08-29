@@ -796,5 +796,9 @@ body {
 
         font-size: 18px;
     }
-
+.footer-key-image {
+    width: 70px;
+    height: 40px;
+    object-fit: contain;
+}
 }
