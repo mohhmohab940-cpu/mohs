@@ -2220,3 +2220,16 @@ body {
     margin: 0 auto 10px !important;
 }
 }
+/* تصغير صورة خدمة نسخ المفاتيح */
+.site-footer img[src*="key-copy-footer"] {
+    width: 120px !important;
+    height: 68px !important;
+    max-width: 120px !important;
+    max-height: 68px !important;
+    min-width: 120px !important;
+    min-height: 68px !important;
+
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto 10px !important;
+}
