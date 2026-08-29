@@ -797,8 +797,8 @@ body {
         font-size: 18px;
     }
 .footer-key-image {
-    width: 70px;
-    height: 40px;
+    width: 150px;
+    height: 100px;
     object-fit: contain;
 }
 }
