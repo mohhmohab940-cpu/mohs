@@ -2240,4 +2240,19 @@ body {
 
     margin: 0 auto 10px !important;
 }
+.site-footer .footer-key-image {
+    width: 120px !important;
+    height: 68px !important;
+
+    max-width: 120px !important;
+    max-height: 68px !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+    display: block !important;
+
+    margin: 0 auto 10px !important;
+}
 }
