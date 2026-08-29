@@ -798,12 +798,5 @@ body {
     }
 /* حجم صورة خدمة نسخ المفاتيح في الفوتر */
 
-.site-footer .footer-key-service .footer-key-image {
-    width: 200px !important;
-    height: auto !important;
-    max-width: 200px !important;
-    object-fit: contain !important;
-    display: block !important;
-    margin: 0 auto 10px !important;
-}
+
 }
