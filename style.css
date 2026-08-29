@@ -796,6 +796,7 @@ body {
 
         font-size: 18px;
     }
+}
 /* حجم صورة خدمة نسخ المفاتيح في الفوتر */
 .footer-key-image {
     width: 180px !important;
@@ -1163,5 +1164,4 @@ body {
     .keys-hero-content h2 {
         font-size: 19px;
     }
-}
 }
