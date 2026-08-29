@@ -1964,10 +1964,50 @@ body {
     }
 
 
-    .keys-hero-image img {
+   .keys-hero {
+    width: 92%;
+    max-width: 1250px;
+    margin: 25px auto 30px;
 
-        height: 230px;
-    }
+    min-height: 300px;
+
+    padding: 25px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #071b5c,
+        #153f91
+    );
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow:
+        0 10px 30px rgba(11, 31, 94, 0.18);
+}
+
+.keys-hero-image {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys-hero-image img {
+    width: 100%;
+    max-width: 420px;
+    height: 240px;
+    object-fit: contain;
+}
 
 }
 /* =========================================
@@ -2176,60 +2216,11 @@ body {
     .footer-box {
         align-items: center;
     }
-
 .footer-key-image {
-    width: 150px;
-    height: 85px;
-    object-fit: contain;
-    border-radius: 8px;
-}
-.footer-service-image,
-.footer-key-image {
-    width: 150px !important;
-    height: 85px !important;
-    max-width: 150px !important;
-    object-fit: contain;
-    display: block;
-    border-radius: 8px;
-}
-/* تصغير صورة خدمة نسخ المفاتيح في الفوتر */
-.site-footer .footer-container .footer-key-service img,
-.site-footer .footer-container .footer-image-box img {
-    width: 150px !important;
-    height: 85px !important;
-
-    max-width: 150px !important;
-    max-height: 85px !important;
-
-    min-width: 0 !important;
-    min-height: 0 !important;
-
+    width: 100px !important;
+    height: 57px !important;
+    max-width: 100px !important;
+    max-height: 57px !important;
     object-fit: contain !important;
-
-    display: block !important;
-
-    margin: 0 auto 10px !important;
 }
-.footer-key-image {
-    width: 150px !important;
-    height: 85px !important;
-    max-width: 180px !important;
-    max-height: 100px !important;
-    object-fit: contain !important;
-    display: block !important;
-    margin: 0 auto 10px !important;
-}
-}
-/* تصغير صورة خدمة نسخ المفاتيح */
-.site-footer img[src*="key-copy-footer"] {
-    width: 120px !important;
-    height: 68px !important;
-    max-width: 120px !important;
-    max-height: 68px !important;
-    min-width: 120px !important;
-    min-height: 68px !important;
-
-    object-fit: contain !important;
-    display: block !important;
-    margin: 0 auto 10px !important;
 }
