@@ -797,6 +797,9 @@ body {
         font-size: 18px;
     }
 /* حجم صورة خدمة نسخ المفاتيح في الفوتر */
-
+.footer-key-image {
+    width: 180px !important;
+    height: auto !important;
+}
 
 }
