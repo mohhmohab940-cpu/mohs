@@ -1970,3 +1970,34 @@ body {
     }
 
 }
+/* =========================================
+   صورة خدمة نسخ المفاتيح في الفوتر
+========================================= */
+
+.footer-image-box {
+    align-items: center;
+    text-align: center;
+}
+
+.footer-service-image {
+    width: 220px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-image-box h3 {
+    color: #FFD700;
+    margin: 5px 0;
+}
+
+.footer-image-box a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-image-box a:hover {
+    color: white;
+}
