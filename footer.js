@@ -4,25 +4,39 @@ document.write(`
 
     <div class="footer-container">
 
-        <!-- خدمة نسخ المفاتيح -->
+        <!-- بيانات المحل -->
 
-        <div class="footer-box footer-service">
+        <div class="footer-box footer-info">
 
-            <div class="footer-service-icon">
-                🔑
-            </div>
+            <img
+                src="images/logo.png"
+                alt="سماء العبور"
+                class="footer-logo"
+            >
 
             <h3>
-                خدمة نسخ المفاتيح
+                سماء العبور للأدوات الكهربائية
             </h3>
 
             <p>
-                نسخ مفاتيح بجودة عالية
-                وسرعة في التنفيذ.
+                كل ما تحتاجه من الأدوات والمستلزمات
+                الكهربائية بجودة عالية وأسعار مناسبة.
             </p>
 
-            <a href="keys.html">
-                اعرف المزيد
+            <p>📞 01097793747</p>
+
+            <p>📧 managerc8@gmail.com</p>
+
+            <a
+                href="https://www.facebook.com/profile.php?id=100083615672026"
+                target="_blank">
+                Facebook
+            </a>
+
+            <a
+                href="https://wa.me/201097793747"
+                target="_blank">
+                WhatsApp
             </a>
 
         </div>
@@ -30,7 +44,7 @@ document.write(`
 
         <!-- الأقسام -->
 
-        <div class="footer-box">
+        <div class="footer-box footer-categories">
 
             <h3>
                 الأقسام
@@ -63,44 +77,27 @@ document.write(`
         </div>
 
 
-        <!-- بيانات المحل -->
+        <!-- خدمة نسخ المفاتيح -->
 
-        <div class="footer-box footer-info">
+        <div class="footer-box footer-key-service">
 
             <img
-                src="images/logo.png"
-                alt="سماء العبور"
-                class="footer-logo"
+                src="images/key-copy-service.png"
+                alt="خدمة نسخ المفاتيح"
+                class="footer-key-image"
             >
 
             <h3>
-                سماء العبور للأدوات الكهربائية
+                خدمة نسخ المفاتيح
             </h3>
 
             <p>
-                كل ما تحتاجه من الأدوات
-                والمستلزمات الكهربائية
-                بجودة عالية وأسعار مناسبة.
+                نسخ مفاتيح بجودة عالية
+                وسرعة في التنفيذ.
             </p>
 
-            <p>
-                📞 01097793747
-            </p>
-
-            <p>
-                📧 managerc8@gmail.com
-            </p>
-
-            <a
-                href="https://www.facebook.com/profile.php?id=100083615672026"
-                target="_blank">
-                Facebook
-            </a>
-
-            <a
-                href="https://wa.me/201097793747"
-                target="_blank">
-                WhatsApp
+            <a href="keys.html">
+                اعرف المزيد
             </a>
 
         </div>
