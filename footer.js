@@ -1,34 +1,44 @@
 document.write(`
 
-<footer class="site-footer" id="contact">
+<footer class="site-footer">
 
     <div class="footer-container">
 
-        <div class="footer-box">
+        <!-- خدمة نسخ المفاتيح -->
 
-            <img
-                src="images/logo.png"
-                alt="سماء العبور"
-                class="footer-logo"
-            >
+        <div class="footer-box footer-service">
+
+            <div class="footer-service-icon">
+                🔑
+            </div>
 
             <h3>
-                سماء العبور للأدوات الكهربائية
+                خدمة نسخ المفاتيح
             </h3>
 
             <p>
-                كل ما تحتاجه من الأدوات والمستلزمات
-                الكهربائية بجودة عالية وأسعار مناسبة.
+                نسخ مفاتيح بجودة عالية
+                وسرعة في التنفيذ.
             </p>
+
+            <a href="keys.html">
+                اعرف المزيد
+            </a>
 
         </div>
 
 
+        <!-- الأقسام -->
+
         <div class="footer-box">
 
-            <h3>الأقسام</h3>
+            <h3>
+                الأقسام
+            </h3>
 
-            <a href="lighting.html">الإضاءة</a>
+            <a href="lighting.html">
+                الإضاءة
+            </a>
 
             <a href="switches.html">
                 المفاتيح والبرايز
@@ -46,16 +56,40 @@ document.write(`
                 التوصيلات والمستلزمات
             </a>
 
+            <a href="keys.html">
+                نسخ المفاتيح
+            </a>
+
         </div>
 
 
-        <div class="footer-box">
+        <!-- بيانات المحل -->
 
-            <h3>تواصل معنا</h3>
+        <div class="footer-box footer-info">
 
-            <p>📞 01097793747</p>
+            <img
+                src="images/logo.png"
+                alt="سماء العبور"
+                class="footer-logo"
+            >
 
-            <p>📧 managerc8@gmail.com</p>
+            <h3>
+                سماء العبور للأدوات الكهربائية
+            </h3>
+
+            <p>
+                كل ما تحتاجه من الأدوات
+                والمستلزمات الكهربائية
+                بجودة عالية وأسعار مناسبة.
+            </p>
+
+            <p>
+                📞 01097793747
+            </p>
+
+            <p>
+                📧 managerc8@gmail.com
+            </p>
 
             <a
                 href="https://www.facebook.com/profile.php?id=100083615672026"
