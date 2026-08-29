@@ -81,12 +81,11 @@ document.write(`
 
         <div class="footer-box footer-key-service">
 
-            <img
-                src="images/key-copy-service.png"
-                alt="خدمة نسخ المفاتيح"
-                class="footer-key-image"
-            >
-
+           <img
+    src="images/key-copy-footer.png"
+    alt="خدمة نسخ المفاتيح"
+    class="footer-key-image"
+>
             <h3>
                 خدمة نسخ المفاتيح
             </h3>
