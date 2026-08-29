@@ -2192,4 +2192,22 @@ body {
     display: block;
     border-radius: 8px;
 }
+/* تصغير صورة خدمة نسخ المفاتيح في الفوتر */
+.site-footer .footer-container .footer-key-service img,
+.site-footer .footer-container .footer-image-box img {
+    width: 150px !important;
+    height: 85px !important;
+
+    max-width: 150px !important;
+    max-height: 85px !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    object-fit: contain !important;
+
+    display: block !important;
+
+    margin: 0 auto 10px !important;
+}
 }
