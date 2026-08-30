@@ -1066,7 +1066,7 @@ body {
 .keys-cta-text p {
     margin: 0;
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .keys-cta-buttons {
@@ -1164,6 +1164,6 @@ body {
     }
 
     .keys-hero-content h2 {
-        font-size: 19px;
+        font-size: 25px;
     }
 }
