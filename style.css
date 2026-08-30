@@ -1035,8 +1035,9 @@ body {
 .keys-product-card p {
     margin: 0;
     color: #666;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1.6;
+     font-weight: bold;
 }
 
 .keys-cta {
