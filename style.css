@@ -949,13 +949,13 @@ body {
 .keys-feature h3 {
     margin: 0 0 6px;
     color: #0B1F5E;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .keys-feature p {
     margin: 0;
-    color: #0B1F5E;
-    font-size: 20px;
+    color: #000000;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -983,13 +983,13 @@ body {
 .keys-section-subtitle {
     margin: 0 0 30px;
     color: #070000;
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
 }
 
 .keys-product-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 18px;
 }
 
@@ -1056,7 +1056,13 @@ body {
 .keys-cta-text {
     text-align: right;
 }
-
+.keys-product-card strong {
+    display: block;
+    color: #FFD700;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
 .keys-cta-text h2 {
     margin: 0 0 8px;
     color: #0B1F5E;
