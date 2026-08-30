@@ -1027,14 +1027,14 @@ body {
 
 .keys-product-card h3 {
     margin: 8px 0;
-    color: #0B1F5E;
+    color: #000000;
     font-size: 30px;
      font-weight: bold;
 }
 
 .keys-product-card p {
     margin: 0;
-    color: #09447c;
+    color: #000102;
     font-size: 18px;
     line-height: 1.6;
      font-weight: bold;
