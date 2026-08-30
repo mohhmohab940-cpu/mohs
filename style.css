@@ -966,7 +966,7 @@ body {
 .keys-section-title {
     margin: 0;
     color: #0B1F5E;
-    font-size: 34px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -983,7 +983,7 @@ body {
 .keys-section-subtitle {
     margin: 0 0 30px;
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -1028,7 +1028,8 @@ body {
 .keys-product-card h3 {
     margin: 8px 0;
     color: #0B1F5E;
-    font-size: 20px;
+    font-size: 30px;
+     font-weight: bold;
 }
 
 .keys-product-card p {
