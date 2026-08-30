@@ -79,7 +79,7 @@ document.write(`
 
         <a href="supplies.html">التوصيلات والمستلزمات</a>
         
-        <a href="keys.html"> نسخ المفاتيح</a>
+        <a href="keys.html">نسخ المفاتيح</a>
 
         <a href="#contact">تواصل معنا</a>
         
