@@ -1132,7 +1132,7 @@ const products = [
         name: "سماعه سلكيه  ",
         description: "سماعة سلكية عضم",
         price: "50 جنيه",
-        image: "images/handfree-bones",
+        image: "images/handfree-bones.png",
         category: "supplies"
     },
     
