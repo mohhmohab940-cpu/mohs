@@ -1075,14 +1075,14 @@ const products = [
         name: "Cable micro ",
         description: "Cable micro ",
         price: "25 جنيه",
-        image: "images/cable-micro",
+        image: "images/cable-micro.png",
         category: "supplies"
     },
     {
         name: "Cable micro ",
         description: "Cable micro ",
         price: "60 جنيه",
-        image: "images/cable-micro-pro",
+        image: "images/cable-micro-pro.png",
         category: "supplies"
     },
     
@@ -1090,42 +1090,42 @@ const products = [
         name: "Cable type c ",
         description: "Cable type c  ",
         price: "30 جنيه",
-        image: "images/cable-type-c",
+        image: "images/cable-type-c.png",
         category: "supplies"
     },
     {
         name: "Cable type c ",
         description: "Cable type c  ",
         price: "70 جنيه",
-        image: "images/cable-type-c-pro",
+        image: "images/cable-type-c-pro.png",
         category: "supplies"
     },
     {
         name: "Cable Ipphone",
         description: "Cable Iphone ",
         price: "100 جنيه",
-        image: "images/cable-iphone",
+        image: "images/cable-iphone.png",
         category: "supplies"
     },
     {
         name: "Cable type c-type-c ",
         description: "Cable type c To type c ",
         price: "120 جنيه",
-        image: "images/cable-type-c-type-c",
+        image: "images/cable-type-c-type-c.png",
         category: "supplies"
     },
     {
         name: "Cable type c-iphone ",
         description: "Cable type c To Iphone",
         price: "120 جنيه",
-        image: "images/cable-iphone-type-c",
+        image: "images/cable-iphone-type-c.png",
         category: "supplies"
     },
     {
         name: "سماعه سلكيه  ",
         description: "سماعة سلكية كاوتش",
         price: "50 جنيه",
-        image: "images/handfree-rubber",
+        image: "images/handfree-rubber.png",
         category: "supplies"
     },
     {
