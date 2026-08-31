@@ -1071,6 +1071,73 @@ const products = [
         image: "images/كوتشه منوليكس.jpg",
         category: "supplies"
     },
+    {
+        name: "Cable micro ",
+        description: "Cable micro ",
+        price: "25 جنيه",
+        image: "images/cable-micro",
+        category: "supplies"
+    },
+    {
+        name: "Cable micro ",
+        description: "Cable micro ",
+        price: "60 جنيه",
+        image: "images/cable-micro-pro",
+        category: "supplies"
+    },
+    
+    {
+        name: "Cable type c ",
+        description: "Cable type c  ",
+        price: "30 جنيه",
+        image: "images/cable-type-c",
+        category: "supplies"
+    },
+    {
+        name: "Cable type c ",
+        description: "Cable type c  ",
+        price: "70 جنيه",
+        image: "images/cable-type-c-pro",
+        category: "supplies"
+    },
+    {
+        name: "Cable Ipphone",
+        description: "Cable Iphone ",
+        price: "100 جنيه",
+        image: "images/cable-iphone",
+        category: "supplies"
+    },
+    {
+        name: "Cable type c-type-c ",
+        description: "Cable type c To type c ",
+        price: "120 جنيه",
+        image: "images/cable-type-c-type-c",
+        category: "supplies"
+    },
+    {
+        name: "Cable type c-iphone ",
+        description: "Cable type c To Iphone",
+        price: "120 جنيه",
+        image: "images/cable-iphone-type-c",
+        category: "supplies"
+    },
+    {
+        name: "سماعه سلكيه  ",
+        description: "سماعة سلكية كاوتش",
+        price: "50 جنيه",
+        image: "images/handfree-rubber",
+        category: "supplies"
+    },
+    {
+        name: "سماعه سلكيه  ",
+        description: "سماعة سلكية عضم",
+        price: "50 جنيه",
+        image: "images/handfree-bones",
+        category: "supplies"
+    },
+    
+
+
     // =========================
     // القواطع واللوحات
     // =========================
@@ -1086,8 +1153,8 @@ const products = [
     {
         name: "قاطع كهربائي 40A",
         description: "قواطع كهربائية عالية الجودة",
-        price: "125 جنيه",
-        image: "images/circuit-40A.png",
+        price: "30 جنيه",
+        image: "images/circuit-40A",
         category: "breakers"
     },
 
